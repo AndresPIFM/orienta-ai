@@ -3,7 +3,6 @@
 **Advanced AI for Data Science II · Tecnológico de Monterrey**  
 Multi-agent system that centralizes academic and labor market data to deliver personalized career recommendations in natural language.
 
----
 
 ## The Problem
 
@@ -11,7 +10,6 @@ In Mexico, the information students need to choose a university career is scatte
 
 Orienta.ai centralizes all of that into a single conversational agent.
 
----
 
 ## What It Does
 
@@ -23,7 +21,6 @@ Orienta.ai centralizes all of that into a single conversational agent.
 | Kardex OCR | Extracts grades from academic transcripts (PDF/image) using OCI Document Understanding |
 | Web Chatbot | Conversational interface built with Oracle APEX + JavaScript |
 
----
 
 ## System Architecture
 
@@ -60,7 +57,6 @@ PostgreSQL (Autonomous DB)
 - **OCR Module** — OCI Document Understanding extracts grades from scanned transcripts
 - **University Module** — REST microservice filtering 185 institutions by state, type, cost, and scholarship rules
 
----
 
 ## Recommendation Model
 
@@ -78,7 +74,6 @@ Scoring approaches: cosine similarity on text embeddings, discrete intersection 
 
 $$\text{Score}(j) = \sum_k w_k \cdot s_j^k$$
 
----
 
 ## Results
 
@@ -89,7 +84,6 @@ $$\text{Score}(j) = \sum_k w_k \cdot s_j^k$$
 
 The one misclassification (Medicine → Nutrition) happened because the student described wanting to help people and promote healthy habits — without mentioning clinical environments or hard sciences. A known problem in vocational guidance: how someone describes themselves doesn't always match what their chosen career actually involves.
 
----
 
 ## Datasets
 
@@ -100,7 +94,6 @@ Built manually from official educational portals, university websites, and labor
 
 Scholarship thresholds for private universities: 20% for GPA 8.0–8.5, 50% for 8.5–9.5, and 100% above 9.5.
 
----
 
 ## My Contribution
 
@@ -111,7 +104,6 @@ My role was data engineering and statistical analysis:
 - **Data preparation** — cleaning, normalization, duplicate removal, RIASEC labeling, and merging of multi-source datasets
 - **Database schema** — relational schema for PostgreSQL/TimescaleDB supporting semantic queries and similarity calculations
 
----
 
 ## Tech Stack
 
@@ -129,7 +121,6 @@ My role was data engineering and statistical analysis:
 | Data Collection | Selenium, Requests |
 | ML/DL | TensorFlow/Keras, scikit-learn, pandas, numpy |
 
----
 
 ## Repository Structure
 
@@ -145,13 +136,11 @@ orienta-ai/
     └── Orienta_ai_Report.pdf # Full project report
 ```
 
----
 
 ## Demo
 
 [Watch the agent in action](https://youtu.be/2CnAWxUn4kQ)
 
----
 
 ## Team
 
@@ -159,7 +148,6 @@ Tecnológico de Monterrey — Advanced AI for Data Science II (Nov–Dec 2025)
 
 Andrew Williams · Alejandro Miloslavich · Marco Miloslavich · Luis Navarro · Bruno Zamora · Andrés Pi · Samuel López
 
----
 
 ## References
 
